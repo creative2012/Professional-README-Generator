@@ -24,7 +24,7 @@ const questions = [
     {
         type: 'input',
         message: "Add Install Instructions:",
-        name: 'description',
+        name: 'install',
         when: (answers) => answers.instConf === true
     },
     {
