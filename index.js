@@ -49,7 +49,7 @@ const questions = [
         type: 'list',
         message: "Choose a License:",
         name: 'licence',
-        choices: ["Apache", "BSD", "Copyleft", "GPL", "MIT", "Mozilla", "Open-Source", "Public-Domain", "WTFPL"],
+        choices: ["Apache", "BSD", "GPL", "Hippocratic" ,"IBM", "MIT", "Unlicence", "WTFPL"],
         when: (answers) => answers.licenceConf === true
     },
     {
@@ -148,13 +148,12 @@ function init() {
             //write file
             let FileStructure = [root, `${root}/${newDir}`];
             let data = generateMarkdown(answers);
-            writeToFile(title, data, ['mit', 'bsd'], FileStructure);
+            writeToFile(title, data, FileStructure);
         });
 
 }
 
 // function call to initialize program
 init();
-
 
 
