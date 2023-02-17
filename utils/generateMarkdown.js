@@ -47,37 +47,25 @@ function generateMarkdown(data) {
 
   ${toc} 
 
-  ${toc.length > 1 ? '---':''}
-
   ${instConf ? '## 📁Installation': ''}
 
   ${instConf ? install: ''}
-
-  ${instConf ? '---': ''}
 
   ${usageConf ? '## 📄Usage': ''}
 
   ${usageConf ? usage: ''}
 
-  ${usageConf ? '---': ''}
-
   ${contribConf ? '## 👪Contributors': ''}
 
   ${contribConf ? contributing: ''}
-
-  ${contribConf ? '---': ''}
 
   ${testsConf ? '## 🔍Tests': ''}
 
   ${testsConf ? tests: ''}
 
-  ${testsConf ? '---': ''}
-
   ${licenceConf ? '## 📜Licence': ''}
 
   ${licenceConf ? licence: ''}
-
-  ${licenceConf ? '---': ''}
 
   ${questionsConf ? '## 💡Questions': ''}
 
@@ -87,7 +75,6 @@ function generateMarkdown(data) {
 
   ${questionsConf ? '🔗 [Git Hub Profile](https://github.com/'+gitUserName+')': ''}
 
-  ${questionsConf ? '---': ''}
 `;
 }
 
