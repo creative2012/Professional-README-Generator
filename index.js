@@ -62,7 +62,7 @@ const questions = [
         type: 'input',
         message: "Add contributers(seperate with a comma):",
         name: 'contributing',
-        when: (answers) => answers.contribConf=== true
+        when: (answers) => answers.contribConf === true
     },
     {
         type: "confirm",
@@ -100,31 +100,60 @@ const questions = [
         name: 'questions',
         when: (answers) => answers.questionsConf === true
     },
-    
+
 ];
+function makeFileStructure(root, newDir){
+
+    //make root directory is doesnt exist
+    makeDir(root);
+    //make project folder
+    makeDir(newDir);
+
+}
+
+function makeDir(dir){
+    fs.mkdir(dir, { recursive: true }, (err) => {
+        if (err) throw err;
+        });
+}
 
 // function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(`${fileName.split(" ").join("_")}_README.md`, data, err => {
-                if (err) {
-                    console.error(err);
-                } else {
-                    console.log(`Your README for project: "${fileName}", has been Saved!`);
-                }
-            });
+function writeToFile(fileName, data, images, fileStructure) {
+     
+    //write readme file
+    fs.writeFile(`${fileStructure[1]}/README.md`, data, err => {
+        if (err) {
+            console.error(err);
+        } else {
+            //alert all went well
+            console.log(`Your README for project: "${fileName}", has been Saved in the "${fileStructure[0]}" directory`);
+        }
+    });
 }
 
 // function to initialize program
 function init() {
     inquirer
-    .prompt(questions)
-    .then((answers) => {
-        console.log(answers);
-        let data = generateMarkdown(answers);
-        writeToFile(answers.title, data);
-    });
+        .prompt(questions)
+        .then((answers) => {
+            console.log(answers);
+
+            // make file Structure
+            let title = answers.title;
+            let root = 'projectFiles';
+            let newDir = title.split(" ").join("_");
+            makeFileStructure(root, `${root}/${newDir}`);
+
+            //write file
+            let FileStructure = [root, `${root}/${newDir}`];
+            let data = generateMarkdown(answers);
+            writeToFile(title, data, ['mit','bsd'], FileStructure);
+        });
 
 }
 
 // function call to initialize program
 init();
+
+
+
