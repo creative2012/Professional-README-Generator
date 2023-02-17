@@ -10,15 +10,106 @@ const questions = [
         message: "What is the title of your project?",
         name: 'title'
     },
+    {
+        type: 'input',
+        message: "Describe your project:",
+        name: 'description'
+    },
+    {
+        type: "confirm",
+        message: "do you want to include an installation guide?",
+        name: 'instConf',
+
+    },
+    {
+        type: 'input',
+        message: "Add Install Instructions:",
+        name: 'description',
+        when: (answers) => answers.instConf === true
+    },
+    {
+        type: "confirm",
+        message: "do you want to include a usage guide?",
+        name: 'usageConf',
+
+    },
+    {
+        type: 'input',
+        message: "Add usage Instructions:",
+        name: 'usage',
+        when: (answers) => answers.usageConf === true
+    },
+    {
+        type: "confirm",
+        message: "do you want to include a License?",
+        name: 'licenceConf',
+
+    },
+    {
+        type: 'list',
+        message: "Choose a License:",
+        name: 'licence',
+        choices: ["Apache", "BSD", "Copyleft", "GPL", "MIT", "Mozilla", "Open-Source", "Public-Domain", "WTFPL"],
+        when: (answers) => answers.licenceConf === true
+    },
+    {
+        type: "confirm",
+        message: "do you want to include contributers?",
+        name: 'contribConf',
+
+    },
+    {
+        type: 'input',
+        message: "Add contributers(seperate with a comma):",
+        name: 'contributing',
+        when: (answers) => answers.contribConf=== true
+    },
+    {
+        type: "confirm",
+        message: "do you want to include tests?",
+        name: 'testsConf',
+
+    },
+    {
+        type: 'input',
+        message: "Add Test information:",
+        name: 'tests',
+        when: (answers) => answers.testsConf === true
+    },
+    {
+        type: "confirm",
+        message: "do you want to include a Questions section?",
+        name: 'questionsConf',
+
+    },
+    {
+        type: 'input',
+        message: "What is your Github user name?",
+        name: 'gitUserName',
+        when: (answers) => answers.questionsConf === true
+    },
+    {
+        type: 'input',
+        message: "What is your email address for people to contact you?",
+        name: 'email',
+        when: (answers) => answers.questionsConf === true
+    },
+    {
+        type: 'input',
+        message: "Add instruction on how users can reach you:",
+        name: 'questions',
+        when: (answers) => answers.questionsConf === true
+    },
+    
 ];
 
 // function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(`${fileName}.md`, data, err => {
+    fs.writeFile(`${fileName.split(" ").join("_")}_README.md`, data, err => {
                 if (err) {
                     console.error(err);
                 } else {
-                    console.log('Your README has been Saved!');
+                    console.log(`Your README for project: "${fileName}", has been Saved!`);
                 }
             });
 }
@@ -28,8 +119,9 @@ function init() {
     inquirer
     .prompt(questions)
     .then((answers) => {
+        console.log(answers);
         let data = generateMarkdown(answers);
-        writeToFile('test', data);
+        writeToFile(answers.title, data);
     });
 
 }
