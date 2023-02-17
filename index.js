@@ -102,24 +102,25 @@ const questions = [
     },
 
 ];
-function makeFileStructure(root, newDir){
+//function to make file structure for new readme
+function makeFileStructure(root, newDir) {
 
-    //make root directory is doesnt exist
+    //make root directory if doesnt exist
     makeDir(root);
     //make project folder
     makeDir(newDir);
 
 }
-
-function makeDir(dir){
+//function to make each directory
+function makeDir(dir) {
     fs.mkdir(dir, { recursive: true }, (err) => {
         if (err) throw err;
-        });
+    });
 }
 
 // function to write README file
-function writeToFile(fileName, data, images, fileStructure) {
-     
+function writeToFile(fileName, data, fileStructure) {
+
     //write readme file
     fs.writeFile(`${fileStructure[1]}/README.md`, data, err => {
         if (err) {
@@ -147,7 +148,7 @@ function init() {
             //write file
             let FileStructure = [root, `${root}/${newDir}`];
             let data = generateMarkdown(answers);
-            writeToFile(title, data, ['mit','bsd'], FileStructure);
+            writeToFile(title, data, ['mit', 'bsd'], FileStructure);
         });
 
 }
