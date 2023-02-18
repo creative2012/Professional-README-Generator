@@ -1,14 +1,18 @@
-# 💻 This is my App
-  [![License: WTFPL](https://img.shields.io/badge/License-Hippocratic_2.1-lightgrey.svg)](https://firstdonoharm.dev)
+# 💻 This is an App
+  [![License: WTFPL](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
   ## Description
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-  ---
+   ## Table of Contents  
+  * [Installation](#installation) 
+  * [Usage](#usage)  
+  * [Contributors](#contributors) 
+  * [Tests](#tests)  
+  * [Licence](#licence)  
+  * [Questions](#questions) 
 
-   ## Table of Contents <br />- [Installation](#installation)<br />- [Usage](#usage)<br />- [Contributors](#contributors)<br />- [Tests](#tests)<br />- [Licence](#licence)<br />- [Questions](#questions)<br /> 
-
-  ## Installation
+  ##Installation
 
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
@@ -24,9 +28,9 @@
 
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-  ## Licence 📜
+  ## Licence
 
-  Hippocratic
+  Apache
 
   ## Questions
 

@@ -10,7 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "fs": "^0.0.1-security",
-    "inquirer": "^6.5.0",
-    "node-fetch": "^2.6.9"
+    "inquirer": "^6.5.0"
   }
 }

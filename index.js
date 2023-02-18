@@ -54,13 +54,13 @@ const questions = [
     },
     {
         type: "confirm",
-        message: "do you want to include contributers?",
+        message: "do you want to include Contribution Guidlines?",
         name: 'contribConf',
 
     },
     {
         type: 'input',
-        message: "Add contributers(seperate with a comma):",
+        message: "Add Contribution guidelines:",
         name: 'contributing',
         when: (answers) => answers.contribConf === true
     },
@@ -135,6 +135,7 @@ function writeToFile(fileName, data, fileStructure) {
 // function to initialize program
 function init() {
     inquirer
+    //ask user a set of questions and get responses
         .prompt(questions)
         .then((answers) => {
             console.log(answers);
