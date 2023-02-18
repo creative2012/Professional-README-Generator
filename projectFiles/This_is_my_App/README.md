@@ -28,7 +28,7 @@
 
   Hippocratic
 
-  ## Questions 💡
+  ## Questions
 
   📫 creative2012@hotmail.com
 
