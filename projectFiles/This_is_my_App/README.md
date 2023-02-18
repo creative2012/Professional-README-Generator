@@ -6,7 +6,7 @@
 
   ---
 
-   ## Table of Contents <br />- [Installation](#📁installation)<br />- [Usage](#📄usage)<br />- [Contributors](#👪contributors)<br />- [Tests](#🔍tests)<br />- [Licence](#📜licence)<br />- [Questions](#💡questions)<br /> 
+   ## Table of Contents <br />- [Installation](#installation)<br />- [Usage](#usage)<br />- [Contributors](#contributors)<br />- [Tests](#tests)<br />- [Licence](#licence)<br />- [Questions](#questions)<br /> 
 
   ## 📁Installation
 

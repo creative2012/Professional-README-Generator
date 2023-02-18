@@ -25,12 +25,12 @@ function generateMarkdown(data) {
 
   let toca = [' ## Table of Contents '];
 
-  instConf ? toca.push('- [Installation](#📁installation)') : null;
-  usageConf ? toca.push('- [Usage](#📄usage)') : null;
-  contribConf ? toca.push('- [Contributors](#👪contributors)') : null;
-  testsConf ? toca.push('- [Tests](#🔍tests)') : null;
-  licenceConf ? toca.push('- [Licence](#📜licence)') : null;
-  questionsConf ? toca.push('- [Questions](#💡questions)') : null;
+  instConf ? toca.push('- [Installation](#installation)') : null;
+  usageConf ? toca.push('- [Usage](#usage)') : null;
+  contribConf ? toca.push('- [Contributors](#contributors)') : null;
+  testsConf ? toca.push('- [Tests](#tests)') : null;
+  licenceConf ? toca.push('- [Licence](#licence)') : null;
+  questionsConf ? toca.push('- [Questions](#questions)') : null;
 
   let toc = ''
   if (toca.length > 1) {
