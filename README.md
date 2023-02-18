@@ -2,7 +2,7 @@
   
 [![License: WTFPL](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
-A command-line application to quickly and easily generate a README file. This allows you, the project creator to devote more time to working on the project.
+A command-line application to quickly and easily generate a README file. This allows you, the project creator, to devote more time to working on the project.
 
 ## Table of Contents
 * [Installation Instructions](#install)
@@ -12,7 +12,7 @@ A command-line application to quickly and easily generate a README file. This al
 * [Licence](#license)
 
 ## Install
-clone the repositor to your computer using "git clone" and then follow the tests in the below section
+Clone the repository to your computer using "git clone" and then follow the tests in the below section
 
 ## Tests
 1.  Ensure that your application includes the require dependacies, by typing the commnd in your integrated terminal "npm install inquirer@6.5.0".
@@ -20,7 +20,7 @@ clone the repositor to your computer using "git clone" and then follow the tests
 3.  Run “node index.js” to begin.
 
 ## Usage
-Run “node index.js” and follow the prompts. At the end your new readme file will be stored in a new directory called "projectFiles".
+Run “node index.js” in your terminal and follow the prompts. At the end, your new readme file will be stored in a new directory called "projectFiles".
 
 ![License: WTFPL](./images/screenShot.png)
 
