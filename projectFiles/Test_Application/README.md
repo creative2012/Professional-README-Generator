@@ -39,7 +39,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
   ## Questions
 
-  📫 Email address for further questions -creative2012@hotmail.com
+  📫 Email address for further questions - creative2012@hotmail.com
 
   If you have any questions you can contact me on the above email address
 
