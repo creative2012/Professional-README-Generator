@@ -35,12 +35,6 @@ function generateMarkdown(data) {
   licenceConf ? toca.push('* [Licence](#licence)') : null;
   questionsConf ? toca.push('* [Questions](#questions)') : null;
 
-  //add sections to string
-  // let toc = ''
-  // if (toca.length > 1) {
-  //   toca.forEach((item) => { toc += `${item}<br />` });
-  // }
-
   //return the markdown
   return `# 💻 ${title}
   ${licenceConf ? '[![License: WTFPL](https://img.shields.io/badge/License-'+badges[licence] : ''}
@@ -56,7 +50,7 @@ function generateMarkdown(data) {
   ${toca.length > 5 ? toca[5] :''}  
   ${toca.length > 6 ? toca[6] :''} 
 
-  ${instConf ? '##Installation': ''}
+  ${instConf ? '## Installation': ''}
 
   ${instConf ? install: ''}
 
