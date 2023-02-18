@@ -73,7 +73,7 @@ function generateMarkdown(data) {
 
   ${questionsConf ? '## Questions': ''}
 
-  ${questionsConf ? '📫 '+ email: ''}
+  ${questionsConf ? '📫 Email address for further questions -'+ email: ''}
 
   ${questionsConf ? questions: ''}
 
