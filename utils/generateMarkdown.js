@@ -40,34 +40,34 @@ function generateMarkdown(data) {
   return `# 💻 ${title}
   ${licenceConf ? '[![License: WTFPL](https://img.shields.io/badge/License-'+badges[licence] : ''}
 
-  ## 📋Description
+  ## Description
   ${description}
 
   ---
 
   ${toc} 
 
-  ${instConf ? '## 📁Installation': ''}
+  ${instConf ? '##Installation': ''}
 
   ${instConf ? install: ''}
 
-  ${usageConf ? '## 📄Usage': ''}
+  ${usageConf ? '## Usage': ''}
 
   ${usageConf ? usage: ''}
 
-  ${contribConf ? '## 👪Contributors': ''}
+  ${contribConf ? '## Contributors': ''}
 
   ${contribConf ? contributing: ''}
 
-  ${testsConf ? '## 🔍Tests': ''}
+  ${testsConf ? '## Tests': ''}
 
   ${testsConf ? tests: ''}
 
-  ${licenceConf ? '## 📜Licence': ''}
+  ${licenceConf ? '## Licence': ''}
 
   ${licenceConf ? licence: ''}
 
-  ${questionsConf ? '## 💡Questions': ''}
+  ${questionsConf ? '## Questions': ''}
 
   ${questionsConf ? '📫 '+ email: ''}
 
