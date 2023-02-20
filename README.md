@@ -22,6 +22,7 @@ Clone the repository to your computer using "git clone" and then follow the test
 
 ## Usage
 Run “node index.js” in your terminal and follow the prompts. At the end, your new readme file will be stored in a new directory called "projectFiles".
+> [video example](https://drive.google.com/file/d/1EanLbgPuhWtJ86yLs7YLJnxTQJDADPLF/view)
 
 ![License: WTFPL](./images/screenShot.png)
 
